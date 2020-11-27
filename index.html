@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" format-detection" content=" telephone=no">
+    <link rel="stylesheet" href="./css/home_style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/AOS.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/header_fixed.js"></script>
+    <script src="./js/Language.js"></script>
+    <script src="./js/loading.js"></script>
+    <title>Tasters_Palace官網</title>
+</head>
+
+
+<body onload="myFunction()">
+    <!--LOADING-->
+    <div id="loading">
+        <h1>Cooking in Loading..</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--首頁-->
+    <section class="home">
+        <!--header-->
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./images/LOGO.png">
+                        </a>
+                    </div>
+                    <ul class="nav">
+                        <a href="./team.html">
+                            <li class="nav_animation">團隊</li>
+                        </a>
+                        <li class="nav_animation">菜單
+                            <ul>
+                                <a href="./Appetizer.html">
+                                    <li>前菜</li>
+                                </a>
+                                <a href="./Main_Course.html">
+                                    <li>主菜</li>
+                                </a>
+                                <a href="./dessert.html">
+                                    <li>甜點</li>
+                                </a>
+                            </ul>
+                        </li>
+                        <a href="./world_dinner.html">
+                            <li class="nav_animation">世界餐桌</li>
+                        </a>
+                        <a href="./contact.html">
+                            <li class="nav_animation">聯繫我們</li>
+                        </a>
+                        <a href="./boooking.html">
+                            <li class="nav_animation">預定</li>
+                        </a>
+                        <div id="google_translate_element"></div>
+                        <div id="menu-bar">
+                            <div id="menu" onclick="onClickMenu()">
+                                <div id="bar1" class="bar"></div>
+                                <div id="bar2" class="bar"></div>
+                                <div id="bar3" class="bar"></div>
+                            </div>
+                            <ul class="nav1" id="nav1">
+                                <li>
+                                    <a href="./team.html">團隊</a></li>
+                                <li class="aaa" id="#aaa" onclick="onClickSubMenu()">
+                                    菜單 &#9660
+                                    <ul id="sub_menu">
+                                        <li><a href="./Appetizer.html">前菜</a></li>
+                                        <li><a href="./Main_Course.html">主菜</a></li>
+                                        <li><a href="./dessert.html">甜點</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./world_dinner.html">世界餐桌</a></li>
+                                <li>
+                                    <a href="./contact.html">聯繫我們</a></li>
+                                <li>
+                                    <a href="./boooking.html">預定</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-bg" id="menu-bg"></div>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="open_hours">
+            <!--輪播圖-->
+            <div id="open_hours_main" class="owl-carousel owl-theme">
+                <div class="item" style="background-image: url(./images/home/Carousel_01.jpg);">
+                </div>
+                <div class=" item" style="background-image: url(./images/home/Carousel_02.jpg);background-position-x: 58%;">
+                </div>
+                <div class="item" style="background-image: url(./images/home/Carousel_03.jpg);">
+                </div>
+                <div class="item" style="background-image: url(./images/home/Carousel_04.jpg);">
+                </div>
+            </div>
+            <div class="container ">
+                <div id="Tasters_Palace_left">
+                    <h1>Tasters</h1>
+                    <h1>Palace</h1>
+                </div>
+                <div id="Tasters_Palace_right">
+                    <h4>營業時間</h4>
+                    <div class="hours">
+                        <div class="hours_word ">
+                            <h5>星期一／星期日</h5>
+                            <h5>中午 11:30 - 14:30</h5>
+                            <h5>晚上18:00 - 23:30</h5>
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="address_word ">
+                            <h5>宜蘭縣礁溪鄉漳福路25號</h5>
+                            <h5>Tel：0207-352-4441</h5>
+                        </div>
+                    </div>
+                    <div class="booking_row">
+                        <div class="booking_button ">
+                            <a href="./boooking.html">
+                                <h5>預 定</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--關於-->
+    <section class="about">
+        <div class="background_banner">
+            <div class="background_left"></div>
+            <div class="background_right"></div>
+            <div class="background_full"></div>
+        </div>
+        <div class="container">
+            <div class=" row ">
+                <div class="row_left ">
+                </div>
+                <div class="about_word" data-aos="fade-left" data-aos-duration="2500">
+                    <div class="about_title ">
+                        <h2><span>&#10086</span>關於</h2>
+                    </div>
+                    <h5>
+                        Tasters由享譽世界的設計大師菲力普∙史塔克(PHILIPPE STARCK)親自擔綱設計，座落於台灣的宜蘭郊區，擁有10幾種優雅精美的美食，集時尚風格、高雅品味和愉悅氛圍於一身，營造充滿藝術感的舒逸空間。Tasters餐廳及酒吧奉獻由星級名廚巧制的環球佳餚和創意美食，令人回味無窮。本餐廳崇尚「愛」與「喜悅」，並將其融入對客服務的每一瞬間，為來自四方的食客打造獨特非凡的味蕾體驗。
+                    </h5>
+                    <div class="about_Sub_standard" data-aos="rotate-animation" data-aos-duration="2900">
+                        <img src="./images/home/home_about_img1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--團隊-->
+    <section class=" team ">
+        <div class="background_banner">
+            <div class="background_left" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000"></div>
+            <div class="background_right"></div>
+            <div class="background_full"></div>
+        </div>
+        <div class="container " data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">
+            <div class="team_title ">
+                <h2><span>&#10086</span>團隊</h2>
+            </div>
+            <div class="row ">
+                <div class="team_word">
+                    <h5>由來自日本的大廚高田裕介等人執掌的餐廳，餐點的設計規劃貼近人心，優雅舒適的環境更讓人把城市的喧囂瞬間拋在腦后。此外我們還另聘請了三位來自各個世界大國的主廚，親自操刀下廚烹飪佳餚，追求的菜式不僅僅是乍看之下的華麗而已，同樣要有一種初嘗就能勾起的懷念感
+                        <a href="./team.html ">
+                            <span>VIEW MORE ►</span>
+                        </a>
+                    </h5>
+                </div>
+                <div class="team_word_right">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--菜單-->
+    <section class="menu ">
+        <div class="container ">
+            <div class="menu_title ">
+                <h2><span>&#10086</span>菜單</h2>
+            </div>
+            <div class="menu_word ">
+                <div class="menu_img1">
+                    <img src="./images/home/home_menu1.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="800">
+                </div>
+                <div id="menu_word_content">
+                    <h5>走遍世界各國嘗遍美食10幾餘年，到選擇台灣展店至今8年的高級西式餐廳。本店走遍各國異地，最後帶回並鑽研出獨特的中西式料理，使用義大利進口的義大利麵、披薩麵粉、起司以及法國和日本的麵粉等進口食材，更嚴選台灣本土產的安心美味食材，製作正統異國風情料理。 </h5>
+                    <h5>從義大利傳統菜色到台灣獨創菜色以及英式牛排一應俱全，請享受融合歐日精華的正統義大利料理。</h5>
+                    <a href="./Appetizer.html ">
+                        <span>VIEW MORE ►</span>
+                    </a>
+                </div>
+                <div class="menu_img2">
+                    <img src="./images/home/home_menu3.jpg" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900">
+                    <img src="./images/home/home_menu2.jpg" id="bottom_img_02" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1000">
+                </div>
+            </div>
+            <div class="menu_side_title1">
+                <img src="./images/home/home_menu_title.svg" alt="">
+            </div>
+            <div class="menu_side_title2">
+                <img src="./images/home/home_menu_title1.svg" alt="">
+            </div>
+            <div class="card_wrapper ">
+                <div class="card ">
+                    <div class="card_title ">
+                        <h4>前菜</h4>
+                    </div>
+                    <div class="box ">
+                        <div class="imgBx ">
+                            <img src="./images/home/home_menu6_Appetizer.jpg">
+                        </div>
+                        <div class="contentBx ">
+                            <div>
+                                <h4>前菜 / 介紹
+                                </h4>
+                                <h5>以經典法式洋蔥湯為首，本餐廳在法式前菜中，呈現新法式的搭配，用當季新鮮水果搭配橄欖油與配菜，調味出不同於其他法式餐廳的前菜。</h5>
+                                <a href="./Appetizer.html ">
+                                    <p>MORE</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card_title ">
+                        <h4>主菜</h4>
+                    </div>
+                    <div class="box ">
+                        <div class="imgBx ">
+                            <img src="./images/home/home_menu7_Main_Course.jpg">
+                        </div>
+                        <div class="contentBx ">
+                            <div>
+                                <h4>主菜 / 介紹</h4>
+                                <h5>本餐廳以美食聞名的里昂，是品嚐正宗里昂菜的好地方，準備口味濃郁的地方料理家常菜，如知名的伯黑斯雞、勃根地斯牛排。</h5>
+                                <a href="./Main_Course.html ">
+                                    <p>MORE</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card_title ">
+                        <h4>甜點</h4>
+                    </div>
+                    <div class="box ">
+                        <div class="imgBx ">
+                            <img src="./images/home/home_menu8_dessert.jpg">
+                        </div>
+                        <div class="contentBx ">
+                            <div>
+                                <h4>甜點 / 介紹
+                                </h4>
+                                <h5>本餐廳融合了義式甜點，將法國長期食用麵包的習慣做了點改良，以經典的馬卡龍跟沙河蛋糕做搭配，甜而不膩，打造出新法式的甜點風味</h5>
+                                <a href="./dessert.html ">
+                                    <p>MORE</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="contact_information ">
+                    <h5>連 絡 資 訊</h5>
+                    <h6><span>&#9742</span> 0207-352-4441</h6>
+                    <h6><span>&#9993</span> Tasters_P_R@gmail.com</h6>
+                    <h6><span>&cap;</span> 宜蘭縣礁溪鄉漳福路25號</h6>
+                </div>
+                <div class="Business_hours ">
+                    <h5>營 業 時 間</h5>
+                    <h6>晚上 18 : 00 - 23 : 30</h6>
+                    <h6>星期一 - 星期日</h6>
+                    <h6>中午 11 : 30 - 14 : 30</h6>
+                </div>
+                <div class="icon ">
+                    <a href="./index.html"><img src="./images/LOGO.png "></a>
+                    <div class="icon_row ">
+                        <img src="./images/icon/facebook.svg " alt=" ">
+                        <img src="./images/icon/instagram.svg " alt=" ">
+                        <img src="./images/icon/twitter.svg " alt=" ">
+                    </div>
+                </div>
+                <div class="now_book">
+                    <div class="spinner-box">
+                        <div class="configure-border-1">
+                            <div class="configure-core"></div>
+                        </div>
+                        <div class="configure-border-2">
+                            <div class="configure-core"></div>
+                        </div>
+                    </div>
+                    <a href="./boooking.html ">
+                        <div class="now_book_word ">
+                            <p>現 在</p>
+                            <P>預 定</P>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--輪播JQ-->
+    <script>
+        $(document).ready(function() {
+            $('#open_hours_main').owlCarousel({
+                loop: true, // 循環輪播
+                margin: 10, // 與右邊圖片的距離
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                autoplay: true, // 自動輪播
+                items: 1, // 一次輪播幾個項目
+                animateIn: 'fadeIn', // add this
+                animateOut: 'fadeOut', // and this
+                responsiveClass: true,
+                // autoplayHoverPause: true // 滑鼠經過時暫停
+                responsive: {
+                    0: {
+                        items: 1
+                            // nav:true
+                    },
+                    600: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false
+                            // loop:false
+                    }
+                }
+            });
+        });
+    </script>
+    <!--語言JS-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'zh-TW',
+                includedLanguages: 'en,ja,zh-TW,ko',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <!--hambuger-->
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav1").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+
+        function onClickSubMenu() {
+            document.getElementById("sub_menu").classList.toggle("change1");
+            document.querySelector(".nav1>li:nth-child(1)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(3)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(4)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(5)").classList.toggle("none");
+        }
+    </script>
+    <!--點擊事件-->
+    <script>
+        $(function() {
+            $('.card').on('click', function() {
+                $(this).toggleClass('-on');
+            });
+            $('.contentBx').on('click', function() {
+                $('.card').removeClass('.-on');
+            });
+        });
+    </script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

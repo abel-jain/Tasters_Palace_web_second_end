@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" format-detection" content=" telephone=no">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/booking.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/AOS.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="./js/header_fixed.js"></script>
+    <script src="./js/Language.js"></script>
+    <script src="./js/loading.js"></script>
+    <title>預定 / Booking</title>
+</head>
+
+<body onload="myFunction()">
+    <!--LOADING-->
+    <div id="loading">
+        <h1>Cooking in Loading..</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/LOGO.png">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <a href="./team.html">
+                        <li class="nav_animation">團隊</li>
+                    </a>
+                    <li class="nav_animation">菜單
+                        <ul>
+                            <a href="./Appetizer.html">
+                                <li>前菜</li>
+                            </a>
+                            <a href="./Main_Course.html">
+                                <li>主菜</li>
+                            </a>
+                            <a href="./dessert.html">
+                                <li>甜點</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="./world_dinner.html">
+                        <li class="nav_animation">世界餐桌</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li class="nav_animation">聯繫我們</li>
+                    </a>
+                    <a href="./boooking.html">
+                        <li class="nav_animation" style="color: firebrick;">&#10020 預定</li>
+                    </a>
+                    <div id="google_translate_element"></div>
+                    <div id="menu-bar">
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="nav1" id="nav1">
+                            <li>
+                                <a href="./team.html">團隊</a></li>
+                            <li class="aaa" id="#aaa" onclick="onClickSubMenu()">
+                                菜單 &#9660
+                                <ul id="sub_menu">
+                                    <li><a href="./Appetizer.html">前菜</a></li>
+                                    <li><a href="./Main_Course.html">主菜</a></li>
+                                    <li><a href="./dessert.html">甜點</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./world_dinner.html">世界餐桌</a></li>
+                            <li>
+                                <a href="./contact.html">聯繫我們</a></li>
+                            <li style="text-indent: -1.4rem;">
+                                <a href="./boooking.html" style="color: #b42222;">&#10020 預定</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-bg" id="menu-bg"></div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Main-->
+    <section>
+        <div class="booking_main">
+            <div id="contact_title">
+                <div id="title">
+                    <h1> 預 定 </h1>
+                    <h1>Booking</h1>
+                </div>
+                <div class="banner"></div>
+            </div>
+            <!--預 約 區 域-->
+            <div class="booking_content">
+                <div class="container">
+                    <h2>Tasters Palace餐廳</h2>
+                    <h4>&cap; 宜蘭縣礁溪鄉漳福路25號</h4>
+                    <h4>&#9742 0207-352-4441</h4>
+                    <div class="row1" data-aos="fade-down-right" data-aos-duration="2500">
+                        <div class="image">
+                            <img src="./images/booking/book_img.jpg">
+                        </div>
+                        <div class="book_content">
+                            <label for="">✎ 姓 名</label>
+                            <input type="text" placeholder="請輸入您的姓名" id="username">
+                            <label for="">✎ 電 話</label>
+                            <input type="text" placeholder="請輸入您的電話" id="cellphone">
+                            <div id="people">
+                                <div>
+                                    <label for="">⋄ 大 人</label>
+                                    <input type="text" id="adult">
+                                    <p>人</p>
+                                </div>
+                                <div>
+                                    <label for="">⋄ 小 孩</label>
+                                    <input type="text" id="Child">
+                                    <p>人</p>
+                                </div>
+                            </div>
+                            <label for="">✎ 預 約 時 段</label>
+                            <div id="time_period">
+                                <input type="radio" id="lunch" name="radio">
+                                <label for="lunch">中午</label>
+                                <input type="radio" id="dinner" name="radio">
+                                <label for="dinner">晚上</label>
+                                <select name="" id="">
+                                <option></option>
+                                <optgroup label="中 午">
+                                    <option value="1">11:30-12:30</option>
+                                    <option value="2">12:30-13:30</option>
+                                    <option value="3">13:30-14:30</option>
+                                </optgroup>
+                                <optgroup label="晚 上">
+                                    <option value="1">18:00-19:00</option>
+                                    <option value="2">19:00-20:00</option>
+                                    <option value="3">20:00-21:00</option>
+                                </optgroup>
+                            </select>
+                            </div>
+                            <label for="">✎ 預 約 日 期</label>
+                            <input type="date" id="date">
+                            <div id="button">
+                                <span>送 出</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--注 意 事 項-->
+                    <h3>&#9822 注 意 事 項</h3>
+                    <div class="row2" data-aos="fade-left" data-aos-duration="2500">
+                        <div data-aos="zoom-in-down" data-aos-duration="2500">
+                            <p>療癒美食,經典品味 Tasters餐廳及酒吧採用最新鮮的本地食材,以當代歐洲美食經典烹飪理念和技巧為基礎,為您奉獻寰宇精選美食和獨特美味創意，無論您品嚐簡單美味的歐陸菜餚、地道純正的療癒美食,或是創意新穎的現代佳饌，Tasters餐廳及酒吧均是您的理想去處。 何不蒞臨主餐廳享用豐盛的午餐或晚餐美膳，之後悠閒逗留，在充滿復古風格的撞球檯上玩一輪撞球?<br><br><span>&#9814〈營業時間〉</span><br>午餐 | 　用餐時間
+                                11:30 到 14:30，最後點餐時間 14:00
+                                <br>晚餐 | 　用餐時間 18:00 到 21:30，最後點餐時間 21:00 <br>酒吧 | 　營業時間 21:30 到 24:00 <br>每週四 Jazz night | 　時間 19:30 到 21:30 <br>每日21：00 後提供飲料及夜間小食，特殊節慶日將會另行公佈營業時間。<br>如對任何食材過敏，特殊忌口，素食等需求請提前告知。
+                            </p>
+                        </div>
+                        <div data-aos="zoom-out" data-aos-duration="2500">
+                            <span>&#9820 〈慶祝活動〉</span>
+                            <p>&#10004 如有事先告知需慶生，紀念日或其他慶祝活動，餐廳會在盤飾甜點上寫祝賀文字。</p>
+                            <p>&#10004 可自備蛋糕於餐廳慶祝。</p>
+                            <p>&#10004 自帶酒水服務費本飯店將酌收葡萄酒與烈酒每瓶 NTD $ 1,000 (750ml) 1.5公升裝葡萄酒將酌收每瓶NTD $2,000 1.5 公升裝以上之葡萄酒另計，如在本飯店點一瓶葡萄酒·即可免一瓶開瓶費。</p>
+                            <p>&#10004 團體活動8人以上用餐、包場、小型會議等特殊方案，歡迎將需求寄至信箱:Tasters_P_R@gmail.com或來電詢問:0207-352-4441 將有專人為您服務</p>
+                            <p>&#10004 建議8人以上用餐事先點菜，以利餐廳提前準備，且提供更妥善的服務。</p>
+                            <p>&#10004 若需私密空間，本餐廳配置兩個包廂可供您選擇，獨立式包廂 12-14人，半開式包廂 14-16人需收取訂金。</p>
+                            <p>&#10004 如特殊節日或特殊活動，需支付全額訂金。可以匯款或信用卡支付。 例如：聖誕夜、跨年、除夕年夜晚餐、情人節、客座主廚活動等等…</p>
+                            <p>&#10004 特殊節日或特殊活動如需取消訂金並延期消費。</p>
+                            <p>&#10004 感謝您詳閱，Tasters Palace期待您的蒞臨。</p>
+                        </div>
+                    </div>
+                    <!--地 圖 資 訊-->
+                    <div class="row3" data-aos="zoom-out-up" data-aos-duration="2500">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7244.365034232002!2d121.74029699999998!3d24.789203!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeeb850f2738aacba!2sHsu%E2%80%99s%20Legend%20Factory%20Tour!5e0!3m2!1szh-TW!2stw!4v1596186175973!5m2!1szh-TW!2stw"
+                                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0">
+                            </iframe>
+                        </div>
+                        <div class="map_word">
+                            <h4>位 置:</h4>
+                            <p>宜蘭縣礁溪鄉漳福路25號</p>
+                            <h4>聯 絡 電 話:</h4>
+                            <p>0207-352-4441</p>
+                            <h4>營 業 時 間:</h4>
+                            <p> 11:30 開始營業</p>
+                            <h4>料 理 類 型: </h4>
+                            <p>餐酒館, 法式料理</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="contact_information ">
+                    <h5>連 絡 資 訊</h5>
+                    <h6><span>&#9742</span> 0207-352-4441</h6>
+                    <h6><span>&#9993</span> Tasters_P_R@gmail.com</h6>
+                    <h6><span>&cap;</span> 宜蘭縣礁溪鄉漳福路25號</h6>
+                </div>
+                <div class="Business_hours ">
+                    <h5>營 業 時 間</h5>
+                    <h6>晚上 18 : 00 - 23 : 30</h6>
+                    <h6>星期一 - 星期日</h6>
+                    <h6>中午 11 : 30 - 14 : 30</h6>
+                </div>
+                <div class="icon ">
+                    <a href="./index.html"><img src="./images/LOGO.png "></a>
+                    <div class="icon_row ">
+                        <img src="./images/icon/facebook.svg " alt=" ">
+                        <img src="./images/icon/instagram.svg " alt=" ">
+                        <img src="./images/icon/twitter.svg " alt=" ">
+                    </div>
+                </div>
+                <div class="now_book">
+                    <div class="spinner-box">
+                        <div class="configure-border-1">
+                            <div class="configure-core"></div>
+                        </div>
+                        <div class="configure-border-2">
+                            <div class="configure-core"></div>
+                        </div>
+                    </div>
+                    <a href="./boooking.html ">
+                        <div class="now_book_word ">
+                            <p>現 在</p>
+                            <P>預 定</P>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--語言JS-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'zh-TW',
+                includedLanguages: 'en,ja,zh-TW,ko',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <!--hambuger-->
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav1").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+
+        function onClickSubMenu() {
+            document.getElementById("sub_menu").classList.toggle("change1");
+            document.querySelector(".nav1>li:nth-child(1)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(3)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(4)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(5)").classList.toggle("none");
+        }
+    </script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

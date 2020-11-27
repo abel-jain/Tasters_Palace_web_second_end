@@ -1,0 +1,431 @@
+            // @import url('../fonts/fonts.css');
+            // @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Roboto:ital@1&display=swap');
+            html {
+                 :lang(ja),
+                 :lang(en),
+                 :lang(ko) {
+                    .header {
+                        .container {
+                            .row {
+                                .nav {
+                                    .nav_animation {
+                                        ul {
+                                            width: 120px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            body {
+                top: 0;
+                position: static!important;
+                .goog-te-gadget-simple {
+                    position: relative;
+                    vertical-align: middle;
+                    height: 30px;
+                    border: 0px;
+                    >span {
+                        position: relative;
+                        top: -17px;
+                        left: -2px;
+                        a {
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+                .goog-te-banner-frame {
+                    display: none;
+                }
+                #goog-gt-tt {
+                    display: none!important;
+                }
+                .goog-te-gadget-icon {
+                    width: 0px;
+                    height: 0px;
+                }
+                .goog-te-menu-frame.fixed {
+                    position: fixed;
+                    animation: fixHeader 2s ease;
+                }
+            }
+            
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                list-style: none;
+            }
+            
+            h1 {
+                font-size: 2.4rem;
+                padding: 0 20px;
+            }
+            
+            h2 {
+                font-size: 2rem;
+                letter-spacing: 10px;
+            }
+            
+            h3 {
+                font-size: 1.7rem;
+            }
+            
+            h4 {
+                font-size: 1.4rem;
+            }
+            
+            h5 {
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+            
+            h6 {
+                font-size: 1.1rem;
+                font-weight: 400;
+            }
+            
+            a {
+                text-decoration: none;
+                font-size: 1rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a,
+            li,
+            ul,
+            span,
+            button,
+            label {
+                // font-weight: 600;
+                // font-family: '標楷體', 'Poppins', 'PingFang TC', 'Heiti TC', 'Adobe 繁黑體 Std', 'AdobeFanHeitiStd-Bold', '微軟正黑體', sans-serif;
+                // font-family: 'Noto Serif TC', serif;
+                // font-family: 'DFLiKaiShuStd-W5', serif;
+                font-weight: 500;
+                line-height: 3.5rem;
+                font-family: 'Noto Serif TC', sans-serif, 'Roboto', serif;
+                color: rgba(22, 22, 22, .8);
+                // font-weight: 500;
+                // font-family: 'Noto Sans TC', sans-serif;
+                // font-family: 'Noto Sans TC', sans-serif;
+                // font-family: '微軟正黑體', 'Adobe 繁黑體 Std', 'Poppins', 'PingFang TC', 'Heiti TC', 'AdobeFanHeitiStd-Bold', '標楷體', sans-serif;
+            }
+            
+            .nav_animation {
+                -webkit-animation: text-shadow-drop-bottom 0.6s both;
+                animation: text-shadow-drop-bottom 0.6s both;
+            }
+            
+            .booking_button:hover,
+            .now_book:hover {
+                -webkit-animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: rotate-in-center 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            }
+            
+            .header.fixed {
+                position: fixed;
+                animation: fixHeader 2s ease;
+                width: 100%;
+                z-index: 99;
+                border-bottom: 1px solid #eeeeee;
+                background-color: rgba(255, 255, 255, 1);
+            }
+            
+            .header {
+                background-color: rgba(255, 255, 255, 0.8);
+                border-bottom: 1px solid rgba(87, 87, 90, .3);
+                .container {
+                    max-width: 1140px;
+                    margin: 0 auto;
+                    padding: 0 30px;
+                    .row {
+                        display: flex;
+                        padding: 0 60px;
+                        .logo {
+                            margin-top: 10px;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .nav {
+                            display: flex;
+                            align-items: center;
+                            flex: 0 1 100%;
+                            justify-content: flex-end;
+                            cursor: pointer;
+                            .nav_animation {
+                                margin: 0px 20px;
+                                padding: 15px 0;
+                                font-size: 22px;
+                                display: inline-block;
+                                color: black;
+                                transform: translateY(0);
+                                position: relative;
+                                ul {
+                                    position: absolute;
+                                    z-index: 10;
+                                    transform: translateY(30px);
+                                    width: 100px;
+                                    display: none;
+                                    top: 35px;
+                                    left: -25px;
+                                    li {
+                                        text-align: center;
+                                        padding: 10px;
+                                        border: 1px solid #ccc;
+                                        background-color: rgba(255, 255, 255, 1);
+                                        font-size: 20px;
+                                        color: black;
+                                        line-height: 2.5rem;
+                                    }
+                                    a:hover li {
+                                        background-color: rgba(87, 87, 90, .9);
+                                        color: rgba(255, 255, 255, 1);
+                                    }
+                                }
+                            }
+                            a:hover .nav_animation {
+                                transform: translateY(-5px);
+                            }
+                            a:hover .nav_animation ul {
+                                display: block;
+                            }
+                            .nav_animation:hover {
+                                transform: translateY(-5px);
+                                ul {
+                                    display: block;
+                                }
+                            }
+                            #menu-bar {
+                                display: none;
+                                z-index: 99;
+                                #menu {
+                                    width: 35px;
+                                    height: 30px;
+                                    margin: 35px 0 20px 20px;
+                                    cursor: pointer;
+                                    .bar {
+                                        height: 5px;
+                                        width: 100%;
+                                        background-color: rgb(22, 22, 22);
+                                        display: block;
+                                        border-top-right-radius: 5px;
+                                        transition: 0.4s ease;
+                                    }
+                                    #bar1 {
+                                        transform: translateY(-4px);
+                                    }
+                                    #bar3 {
+                                        transform: translateY(4px);
+                                    }
+                                }
+                                #menu.change {
+                                    .bar {
+                                        color: rgba(22, 22, 22, 0.9);
+                                    }
+                                    #bar1 {
+                                        transform: translateY(4px) rotateZ(-45deg);
+                                    }
+                                    #bar3 {
+                                        transform: translateY(-6px) rotateZ(45deg);
+                                    }
+                                    #bar2 {
+                                        opacity: 0;
+                                    }
+                                }
+                                .nav1 {
+                                    padding: 0;
+                                    margin: 0 20px;
+                                    transition: 1s ease;
+                                    display: none;
+                                    color: rgba(22, 22, 22, 0.9);
+                                    li {
+                                        font-size: 1.2rem;
+                                        list-style: none;
+                                        padding: 10px 0;
+                                        a {
+                                            font-size: 1.2rem;
+                                            color: rgba(22, 22, 22, 0.9);
+                                            text-decoration: none;
+                                        }
+                                        a:hover {
+                                            font-weight: bold;
+                                        }
+                                        #sub_menu {
+                                            padding-top: 10px;
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                .change {
+                                    display: block;
+                                }
+                                .change1 {
+                                    display: block!important;
+                                }
+                                .none {
+                                    display: none!important;
+                                }
+                            }
+                            .menu-bg {
+                                width: 0;
+                                height: 0;
+                                background: radial-gradient(circle, rgba(247, 241, 227, 0.9), rgba(247, 241, 227, 0.9));
+                                border-radius: 50%;
+                                transition: .7s ease;
+                                z-index: 1;
+                                position: absolute;
+                                top: -100%;
+                                right: -50%;
+                            }
+                            .change-bg {
+                                width: 550px;
+                                height: 590px;
+                                position: absolute;
+                            }
+                            #menu-bar {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                 :lang(ja),
+                 :lang(en),
+                 :lang(ko) {
+                    .header {
+                        .container {
+                            .row {
+                                .nav {
+                                    .nav_animation {
+                                        margin: 0 15px;
+                                        font-size: 20px;
+                                        ul {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (min-width: 769px) and (max-width: 991px) {
+                html {
+                     :lang(ja),
+                     :lang(en),
+                     :lang(ko) {
+                        .header {
+                            .container {
+                                .row {
+                                    .nav {
+                                        .nav_animation {
+                                            margin: 0 10px;
+                                            font-size: 18px;
+                                            ul {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .goog-te-gadget-simple {
+                    >span {
+                        left: -2px;
+                    }
+                }
+                .header {
+                    .container {
+                        .row {
+                            padding: 0;
+                            .nav {
+                                .nav_animation {
+                                    margin: 0 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (min-width: 577px) and (max-width: 768px) {
+                #google_translate_element {
+                    margin-right: 45px!important;
+                }
+                .goog-te-gadget-simple {
+                    >span {
+                        left: -2px;
+                    }
+                }
+                .header {
+                    .container {
+                        .row {
+                            position: relative;
+                            padding: 0;
+                            .nav {
+                                flex: 0 1 100%;
+                                .nav_animation {
+                                    margin: 0 15px;
+                                    display: none;
+                                }
+                                #menu-bar {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (max-width: 576px) {
+                #google_translate_element {
+                    margin-right: 45px!important;
+                }
+                .goog-te-gadget-simple {
+                    >span {
+                        left: -2px;
+                    }
+                }
+                html {}
+                .header {
+                    .container {
+                        .row {
+                            position: relative;
+                            padding: 0;
+                            .nav {
+                                flex: 0 1 100%;
+                                .nav_animation {
+                                    margin: 0 15px;
+                                    display: none;
+                                }
+                                #menu-bar {
+                                    display: block;
+                                }
+                                .menu-bg {
+                                    right: -80%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }

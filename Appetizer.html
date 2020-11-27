@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" format-detection" content=" telephone=no">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/Appetizer.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/AOS.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="./js/header_fixed.js"></script>
+    <script src="./js/Language.js"></script>
+    <script src="./js/loading.js"></script>
+    <title>菜單/menu 前菜</title>
+</head>
+
+
+<body onload="myFunction()">
+    <!--LOADING-->
+    <div id="loading">
+        <h1>Cooking in Loading..</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----header----->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/LOGO.png">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <a href="./team.html">
+                        <li class="nav_animation">團隊</li>
+                    </a>
+                    <li class="nav_animation" style="color: firebrick;">&#10020 菜單
+                        <ul style="left: -11px;">
+                            <a href="./Appetizer.html">
+                                <li>前菜</li>
+                            </a>
+                            <a href="./Main_Course.html">
+                                <li>主菜</li>
+                            </a>
+                            <a href="./dessert.html">
+                                <li>甜點</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="./world_dinner.html">
+                        <li class="nav_animation">世界餐桌</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li class="nav_animation">聯繫我們</li>
+                    </a>
+                    <a href="./boooking.html">
+                        <li class="nav_animation">預定</li>
+                    </a>
+                    <div id="google_translate_element"></div>
+                    <div id="menu-bar">
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="nav1" id="nav1">
+                            <li>
+                                <a href="./team.html">團隊</a></li>
+                            <li class="aaa" id="#aaa" onclick="onClickSubMenu()" style="color: firebrick;">
+                                &#10020 菜單 &#9660
+                                <ul id="sub_menu">
+                                    <li><a href="./Appetizer.html">前菜</a></li>
+                                    <li><a href="./Main_Course.html">主菜</a></li>
+                                    <li><a href="./dessert.html">甜點</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./world_dinner.html">世界餐桌</a></li>
+                            <li>
+                                <a href="./contact.html">聯繫我們</a></li>
+                            <li>
+                                <a href="./boooking.html">預定</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-bg" id="menu-bg"></div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-----菜單----->
+    <section class="menu">
+        <div class="menu_main">
+            <div class="banner">
+                <div class="container">
+                    <div class="Appetizer_title">
+                        <h1>&#9818 | 菜 單 </h1>
+                        <h2>Menu</h2>
+                        <div>
+                            <h5>『 食沒，一心一意的沉靜與膳食之中。這事把對食物的感激提升到極致的人才能習得的奧義 』</h5>
+                            <h6>----美食的俘虜</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_content">
+                <div class="container">
+                    <div class="subtitle">
+                        <h2>前菜</h2>
+                        <h4>&#9821 Appetizer</h4>
+                    </div>
+                    <div class="card_main">
+                        <div class="menu_card">
+                            <div class="menu_imgBx" style="background-image: url(./images/menu/Appetizer/01.jpg)" data-aos="zoom-out-up" data-aos-duration="800" data-aos-delay="1000">
+                            </div>
+                            <div id="content_tit">
+                                <h3>燉桃子佐以腐酒</h3>
+                                <h3>Poached peaches</h3>
+                            </div>
+                            <div class="menu_word" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="1000">
+                                <div id="content_word">
+                                    <h4>燉桃子佐以腐酒</h4>
+                                    <h4>Poached peaches</h4>
+                                    <p>由燉桃子和紅釀酒、番紅花、金盞花和杏仁組合而成，酸中帶甜，帶點金盞花香，細品為盡</p>
+                                    <hr>
+                                    <p>It is a combination of stewed peaches and red wine, saffron, marigolds and almonds. It is sour and sweet with a hint of marigold fragrance.</p>
+                                    <p>US$9.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_card">
+                            <div class="menu_imgBx" style="background-image: url(./images/menu/Appetizer/02.jpg)" data-aos="zoom-out-up" data-aos-duration="800" data-aos-delay="1000">
+                            </div>
+                            <div id="content_tit">
+                                <h3>青醬米綴蘆竹</h3>
+                                <h3>Rice with green sauce and reed</h3>
+                            </div>
+                            <div class="menu_word" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="1000">
+                                <div id="content_word">
+                                    <h4>青醬米綴蘆竹</h4>
+                                    <h4>Rice with green sauce reed</h4>
+                                    <p>灑上由小米醞釀的清酒，蘆竹為主，最後再加上點青醬點綴提香跟提升口感</p>
+                                    <hr>
+                                    <p>Sprinkle with sake brewed by millet, mainly reed bamboo, and finally add some green sauce to embellish the fragrance and enhance the taste</p>
+                                    <p>US$8.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_card">
+                            <div class="menu_imgBx" style="background-image: url(./images/menu/Appetizer/03.jpg)" data-aos="zoom-out-up" data-aos-duration="800" data-aos-delay="1000">
+                            </div>
+                            <div id="content_tit">
+                                <h3>卡士達塔佐以櫻桃</h3>
+                                <h3>Custard with cherries</h3>
+                            </div>
+                            <div class="menu_word">
+                                <div id="content_word" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="1000">
+                                    <h4>卡士達塔佐以櫻桃</h4>
+                                    <h4>Custard with cherries</h4>
+                                    <p>卡式達料為主，搭上少許的蔬果跟櫻桃，最後在淋上橄欖油收味</p>
+                                    <hr>
+                                    <p>Cassida is the main ingredient, with some fruits and vegetables and cherries, and finally topped with olive oil for the flavor</p>
+                                    <p>US$9.55</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_card">
+                            <div class="menu_imgBx" style="background-image: url(./images/menu/Appetizer/04.jpg)" data-aos="zoom-out-up" data-aos-duration="800" data-aos-delay="1000">
+                            </div>
+                            <div id="content_tit">
+                                <h3>法式松露鵝肝</h3>
+                                <h3>French Truffle Foie Gras</h3>
+                            </div>
+                            <div class="menu_word">
+                                <div id="content_word" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="1000">
+                                    <h4>法式松露鵝肝</h4>
+                                    <h4>French Truffle Foie Gras</h4>
+                                    <p>採用頂級的法式黑頂鵝，上面灑上提諾拉加山的松露做點綴，襯托出鵝肉味蕾</p>
+                                    <hr>
+                                    <p>The top-quality French black-top goose is sprinkled with truffles from the Tinoraga Mountains to enhance the taste buds of the goose.</p>
+                                    <p>US$9.33</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu_card">
+                            <div class="menu_imgBx" style="background-image: url(./images/menu/Appetizer/05.jpg)" data-aos="zoom-out-up">
+                            </div>
+                            <div id="content_tit">
+                                <h3>柏根斯竹沙拉</h3>
+                                <h3>Bergenz Bamboo Salad</h3>
+                            </div>
+                            <div class="menu_word">
+                                <div id="content_word" data-aos="zoom-in-down" data-aos-duration="800" data-aos-delay="1000">
+                                    <h4>柏根斯竹沙拉</h4>
+                                    <h4>Bergenz Bamboo Salad</h4>
+                                    <p>採用法式橄欖油跟少許伯斯菜混合而成，些許釀酒跟櫻桃，混合後帶出一番濃濃的法式風味</p>
+                                    <hr>
+                                    <p>Made with French olive oil mixed with a little Persian dish, a little wine and cherries, the mixture brings out a strong French flavor</p>
+                                    <p>US$8.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----footer----->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="contact_information ">
+                    <h5>連 絡 資 訊</h5>
+                    <h6><span>&#9742</span> 0207-352-4441</h6>
+                    <h6><span>&#9993</span> Tasters_P_R@gmail.com</h6>
+                    <h6><span>&cap;</span> 宜蘭縣礁溪鄉漳福路25號</h6>
+                </div>
+                <div class="Business_hours ">
+                    <h5>營 業 時 間</h5>
+                    <h6>晚上 18 : 00 - 23 : 30</h6>
+                    <h6>星期一 - 星期日</h6>
+                    <h6>中午 11 : 30 - 14 : 30</h6>
+                </div>
+                <div class="icon ">
+                    <a href="./index.html"><img src="./images/LOGO.png "></a>
+                    <div class="icon_row ">
+                        <img src="./images/icon/facebook.svg " alt=" ">
+                        <img src="./images/icon/instagram.svg " alt=" ">
+                        <img src="./images/icon/twitter.svg " alt=" ">
+                    </div>
+                </div>
+                <div class="now_book">
+                    <div class="spinner-box">
+                        <div class="configure-border-1">
+                            <div class="configure-core"></div>
+                        </div>
+                        <div class="configure-border-2">
+                            <div class="configure-core"></div>
+                        </div>
+                    </div>
+                    <a href="./boooking.html ">
+                        <div class="now_book_word ">
+                            <p>現 在</p>
+                            <P>預 定</P>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--語言JS-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'zh-TW',
+                includedLanguages: 'en,ja,zh-TW,ko',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <!--hambuger-->
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav1").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+
+        function onClickSubMenu() {
+            document.getElementById("sub_menu").classList.toggle("change1");
+            document.querySelector(".nav1>li:nth-child(1)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(3)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(4)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(5)").classList.toggle("none");
+        }
+    </script>
+    <!--點擊-->
+    <script>
+        $(function() {
+            $('.card').on('click', function() {
+                $(this).toggleClass('-on');
+            });
+        });
+    </script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" format-detection" content=" telephone=no">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/team_style.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/AOS.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="./js/header_fixed.js"></script>
+    <script src="./js/Language.js"></script>
+    <script src="./js/loading.js"></script>
+    <title>我的團隊/our Team</title>
+</head>
+
+<body onload="myFunction()">
+    <!--LOADING-->
+    <div id="loading">
+        <h1>Cooking in Loading..</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/LOGO.png">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <a href="./team.html">
+                        <li class="nav_animation" style="color: firebrick;">&#10020 團隊</li>
+                    </a>
+                    <li class="nav_animation">菜單
+                        <ul>
+                            <a href="./Appetizer.html">
+                                <li>前菜</li>
+                            </a>
+                            <a href="./Main_Course.html">
+                                <li>主菜</li>
+                            </a>
+                            <a href="./dessert.html">
+                                <li>甜點</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="./world_dinner.html">
+                        <li class="nav_animation">世界餐桌</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li class="nav_animation">聯繫我們</li>
+                    </a>
+                    <a href="./boooking.html">
+                        <li class="nav_animation">預定</li>
+                    </a>
+                    <div id="google_translate_element"></div>
+                    <div id="menu-bar">
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="nav1" id="nav1">
+                            <li style="text-indent: -1.4rem;">
+                                <a href="./team.html" style="color: firebrick;">&#10020 團隊</a></li>
+                            <li class="aaa" id="#aaa" onclick="onClickSubMenu()">
+                                菜單 &#9660
+                                <ul id="sub_menu">
+                                    <li><a href="./Appetizer.html">前菜</a></li>
+                                    <li><a href="./Main_Course.html">主菜</a></li>
+                                    <li><a href="./dessert.html">甜點</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./world_dinner.html">世界餐桌</a></li>
+                            <li>
+                                <a href="./contact.html">聯繫我們</a></li>
+                            <li>
+                                <a href="./boooking.html">預定</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-bg" id="menu-bg"></div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--品牌故事-->
+    <section class="team_main">
+        <div class="container">
+            <div class="team_title">
+                <h2>| 團 隊 |</h2>
+                <h4>Our team</h4>
+            </div>
+            <div class="team_word" data-aos="flip-up">
+                <h5>每一道料理的背後都有一則刻骨銘心的故事，從最初的原料挑選到增添主菜的風味調料，每一次的料理都是一次新的體驗。 這次介紹在餐廳中主廚在料理過程中和服務員真誠的服務，從前菜到主餐、甜點都有一個專屬於他們的歷史，就讓我們與您分享。</h5>
+            </div>
+        </div>
+        <div class="Brand_Value">
+            <div class="row">
+                <div id="video">
+                    <video muted autoplay loop>
+                        <source src="./video/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.<!--當影片沒辦法播放時會跑出這段文字-->
+                    </video>
+                </div>
+                <div class="content" data-aos="fade-up-left" data-aos-duration="2000" data-aos-delay="800" data-aos-offset="200">
+                    <h3>美味的關鍵</h3>
+                    <h5>對美食的熱情，是源自四歲開始，我跟著媽媽一起烤蘋果派，那是我對美食的啟蒙時期，從那天起我明白身為一個真正對食物有極大熱情的人，唯一滿足的方法就是準備自己的食物。</h5>
+                    <h5>經過多年對烹飪的熱情，後來我明白: </h5>
+                    <h5>「烹飪是將大地與文化做最完美的融合，因為我的求學背景，受著歐洲法國的歷史影響，在法國追求料理過程中融入些許北非、義大利、地中海風格。吃是一種品嚐的過程，而烹調是創造出你將獲得什麼樣的品嚐感受。」</h5>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--廚 師 介 紹-->
+            <div class="team_title">
+                <h2>| 廚 師 介 紹 |</h2>
+                <h4>Chef introduction</h4>
+            </div>
+            <div class="team_word" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="800" data-aos-offset="0">
+                <h5>食義的基礎在於其心中所在的高度。</h5>
+                <h5>在心中禱告的時候，雖瞬間確實是真心實意的，但結束的時候這份虔誠的心心情也就消失殆盡了。</h5>
+                <h5>請記住，片刻不忘世間萬物以及對生命的感激和敬意，把這份感覺時常保存在內心的深處。這就是食義的基礎知識了。</h5>
+            </div>
+        </div>
+        <div class="Chef_introduction">
+            <div class="Chef_introduction_container">
+                <div class="row">
+                    <div class="slide" id="no1">
+                        <div class="content">
+                            <div class="chef_headerimg" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1200">
+                                <img src="./images/chef/chef_01.jpeg" alt="">
+                            </div>
+                            <div class="chef_word" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200">
+                                <h4>高田裕介</h4>
+                                <p>簡 介:</p>
+                                <p>高田裕介出身自日本奄美大島(位於鹿兒島縣南部的島嶼)。 1991年他從大阪辻調理師専門学校畢業後，在大阪不同的西式餐廳任職數年，直到2004年，因有感於自己的不足，於是前往法國再實習與工作。 當時，巴黎三星餐廳Le Meurice（目前為二星餐廳）錄取了高田主廚。高田受其薰陶甚深，數年之後，因緣際會來到台灣，因為喜歡台灣，故跟之前在法國的chef夥伴一起開設了一家餐廳「Tasters Palace」。 高田主廚表示，會選擇到台灣開設餐廳，是因為對料理有理念，他追求的菜式「不僅僅是乍看之下的華麗而已，同樣要有一種初嘗就能勾起的懷念感」。高田主廚擅長發掘各地的食材、再創造出屬於自己的料理風格。</p>
+                                <p>經 歷:</p>
+                                <ul>
+                                    <li>2007年 畢業於法國Paul Bocus廚藝學院</li>
+                                    <li>2010年 巴黎三星餐廳Le Meurice擔任主廚</li>
+                                    <li>2015年 Tasters Palace擔任主廚</li>
+                                    <li>擅長領域: | 日料 | 法式前菜 | 日式醬料 | 海鮮魚料</li>
+                                </ul>
+                                <p>關 注 我:</p>
+                                <ul class="chef_icon">
+                                    <li><img src="./images/icon/facebook.svg" alt=""></li>
+                                    <li><img src="./images/icon/instagram.svg" alt=""></li>
+                                    <li><img src="./images/icon/twitter.svg" alt=""></li>
+                                    <img src="./images/chef/team_2.png" alt="">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="no2">
+                        <div class="content">
+                            <div class="chef_headerimg" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1200">
+                                <img src="./images/chef/chef_02.jpg" alt="">
+                            </div>
+                            <div class="chef_word" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200">
+                                <h4>Mingoo Kang</h4>
+                                <p>簡 介:</p>
+                                <p>在法國開設Mingles是近來在法國最火紅的餐廳，主廚兼老闆Mingoo Kang個性低調，卻對「現代法式料理」火候掌握精準，直挑饕客們的味蕾。能在一眾國際美食家口中獲得一致好評，正因為他讓西班牙菜平易近人，西式技巧，吃到底卻是法式醬料的味道。出身西廚，曾師承西班牙三星主廚 Martin Berasategui，但他從來沒有忘記法菜的根本，他堅持所有菜式的基礎都建基於「法式菜品」，而法菜來自醬料，在Mingoo的玩轉之下，創新出新派法菜的風格。2015年後，在原店根基穩固情況下，輾轉來到台灣跟當年在法國進修的夥伴一起在台灣經營開設Tasters，一起為東西方融合菜品的目標前進，也為此在台灣發揚法國味蕾的文化。</p>
+                                <p>經 歷:</p>
+                                <ul>
+                                    <li>2007年 畢業於法國Paul Bocus廚藝學院</li>
+                                    <li>2011年 法國Mingles擔任主廚</li>
+                                    <li>2015年 Tasters Palace擔任主廚</li>
+                                    <li>擅長領域: | 新式法菜 | 法式牛排 | 法式甜點</li>
+                                </ul>
+                                <p>關 注 我:</p>
+                                <ul class="chef_icon">
+                                    <li><img src="./images/icon/facebook.svg" alt=""></li>
+                                    <li><img src="./images/icon/instagram.svg" alt=""></li>
+                                    <li><img src="./images/icon/twitter.svg" alt=""></li>
+                                    <img src="./images/chef/team_3.png" alt="">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="no3">
+                        <div class="content">
+                            <div class="chef_headerimg" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1200">
+                                <img src="./images/chef/chef_03.jpg" alt="">
+                            </div>
+                            <div class="chef_word" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200">
+                                <h4>Thitid Tassanakajohn（Chef Ton)</h4>
+                                <p>簡 介:</p>
+                                <p>以越南「Le Du」餐廳躋身「2019年亞洲50最佳餐廳」第20位，並於《曼谷米其林指南》奪下一星的越南主廚Thitid Tassanakajohn （Chef Ton），當年在台灣開設的越式家常菜餐廳「baan 台北」，餐廳名稱「baan」在越語中為「家」的意思，baan提供的數十道菜餚，即是來自Ton主廚的家庭食譜；而在baan掌杓的越南媽媽，正是與Ton主廚親如至親的奶媽，「baan Taipei」更是主廚海外第一家分店，原汁原味呈現這位越南米其林星廚，從小吃到大的美味家常菜！目前跟高田一起待在Tasters一起追求菜品的極致。
+                                </p>
+                                <p>經 歷:</p>
+                                <ul>
+                                    <li>2008年畢業於Ecole LENOTRE烘焙廚藝學院</li>
+                                    <li>2019年亞洲50最佳餐廳「Le Du」主廚</li>
+                                    <li>2020年 Tasters Palace擔任主廚</li>
+                                    <li>擅長領域: | 越式湯品 | 東南亞調味 | 法式甜點</li>
+                                </ul>
+                                <p>關 注 我:</p>
+                                <ul class="chef_icon">
+                                    <li><img src="./images/icon/facebook.svg" alt=""></li>
+                                    <li><img src="./images/icon/instagram.svg" alt=""></li>
+                                    <li><img src="./images/icon/twitter.svg" alt=""></li>
+                                    <img src="./images/chef/team_4.png" alt="">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="no4">
+                        <div class="content">
+                            <div class="chef_headerimg" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1200">
+                                <img src="./images/chef/chef_04.jpg" alt="">
+                            </div>
+                            <div class="chef_word" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1200">
+                                <h4>Luca Fantin</h4>
+                                <p>簡 介:</p>
+                                <p>Luca Fantin 2010年起被網羅至東京的Bulgari Ginza Tower 設立東京旗艦店Il Ristorante - Luca Fantin， 2012 年則開設第二家Bulgari Resort Bali。在2012年，在luca帶領下餐廳連續多年獲得《東京米其林指南》的一星殊榮。他以精緻的菜餚，以及對經典義大利菜色的新鮮詮釋著名，他的菜式融合了傳統手藝與最頂級的當地與季節食材。Luca主廚是唯一一位在日本獲得米其林星星肯定的義大利主廚，亦被著名義大利指南Identità
+                                    。Golose 稱之為「全球最佳義大利主廚」，並獲得Gambero Rosso所稱「最佳義大利餐廳」的榮譽。後來對於美食的追求，決定與當年在法國一起進修的高田裕介一起選擇在台灣開店。</p>
+                                <p>經 歷:</p>
+                                <ul>
+                                    <li>2006年 畢業於法國Paul Bocus廚藝學院</li>
+                                    <li>2010年 設立東京旗艦店Il Ristorante - Luca Fantin 擔任行政主廚</li>
+                                    <li>2012年 開設第二家Bulgari Resort Bali</li>
+                                    <li>2014、15、16年 連續榮獲《東京米其林指南》的一星殊榮</li>
+                                    <li>2019年 在Tasters Palace擔任主廚</li>
+                                    <li>擅長領域: | 西班牙菜 | 義式餐、麵 | 日式餐點 | 西式牛、羊排</li>
+                                </ul>
+                                <p>關 注 我:</p>
+                                <ul class="chef_icon">
+                                    <li><img src="./images/icon/facebook.svg" alt=""></li>
+                                    <li><img src="./images/icon/instagram.svg" alt=""></li>
+                                    <li><img src="./images/icon/twitter.svg" alt=""></li>
+                                    <img src="./images/chef/team_5.png" alt="">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="contact_information ">
+                    <h5>連 絡 資 訊</h5>
+                    <h6><span>&#9742</span> 0207-352-4441</h6>
+                    <h6><span>&#9993</span> Tasters_P_R@gmail.com</h6>
+                    <h6><span>&cap;</span> 宜蘭縣礁溪鄉漳福路25號</h6>
+                </div>
+                <div class="Business_hours ">
+                    <h5>營 業 時 間</h5>
+                    <h6>晚上 18 : 00 - 23 : 30</h6>
+                    <h6>星期一 - 星期日</h6>
+                    <h6>中午 11 : 30 - 14 : 30</h6>
+                </div>
+                <div class="icon ">
+                    <a href="./index.html"><img src="./images/LOGO.png "></a>
+                    <div class="icon_row ">
+                        <img src="./images/icon/facebook.svg " alt=" ">
+                        <img src="./images/icon/instagram.svg " alt=" ">
+                        <img src="./images/icon/twitter.svg " alt=" ">
+                    </div>
+                </div>
+                <div class="now_book">
+                    <div class="spinner-box">
+                        <div class="configure-border-1">
+                            <div class="configure-core"></div>
+                        </div>
+                        <div class="configure-border-2">
+                            <div class="configure-core"></div>
+                        </div>
+                    </div>
+                    <a href="./boooking.html ">
+                        <div class="now_book_word ">
+                            <p>現 在</p>
+                            <P>預 定</P>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--語言JS-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'zh-TW',
+                includedLanguages: 'en,ja,zh-TW,ko',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <!--hambuger-->
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav1").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+
+        function onClickSubMenu() {
+            document.getElementById("sub_menu").classList.toggle("change1");
+            document.querySelector(".nav1>li:nth-child(1)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(3)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(4)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(5)").classList.toggle("none");
+        }
+    </script>
+    <!--點擊-->
+    <script>
+        $(function() {
+            $('.slide').on('click', function() {
+                $(this).toggleClass('-on');
+            });
+        });
+    </script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

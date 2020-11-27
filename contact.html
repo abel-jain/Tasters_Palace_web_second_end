@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/AOS.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+    <script src="./js/header_fixed.js"></script>
+    <script src="./js/Language.js"></script>
+    <script src="./js/loading.js"></script>
+    <title>聯繫我們/Contact</title>
+</head>
+
+<body onload="myFunction()">
+    <!--LOADING-->
+    <div id="loading">
+        <h1>Cooking in Loading..</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/LOGO.png">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <a href="./team.html">
+                        <li class="nav_animation">團隊</li>
+                    </a>
+                    <li class="nav_animation">菜單
+                        <ul>
+                            <a href="./Appetizer.html">
+                                <li>前菜</li>
+                            </a>
+                            <a href="./Main_Course.html">
+                                <li>主菜</li>
+                            </a>
+                            <a href="./dessert.html">
+                                <li>甜點</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="./world_dinner.html">
+                        <li class="nav_animation">世界餐桌</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li class="nav_animation" style="color: firebrick;">&#10020 聯繫我們</li>
+                    </a>
+                    <a href="./boooking.html">
+                        <li class="nav_animation">預定</li>
+                    </a>
+                    <div id="google_translate_element"></div>
+                    <div id="menu-bar">
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="nav1" id="nav1">
+                            <li>
+                                <a href="./team.html">團隊</a></li>
+                            <li class="aaa" id="#aaa" onclick="onClickSubMenu()">
+                                菜單 &#9660
+                                <ul id="sub_menu">
+                                    <li><a href="./Appetizer.html">前菜</a></li>
+                                    <li><a href="./Main_Course.html">主菜</a></li>
+                                    <li><a href="./dessert.html">甜點</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./world_dinner.html">世界餐桌</a></li>
+                            <li style="text-indent: -1.4rem;">
+                                <a href="./contact.html" style="color: firebrick;">&#10020 聯繫我們</a></li>
+                            <li>
+                                <a href="./boooking.html">預定</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-bg" id="menu-bg"></div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Main-->
+    <section>
+        <div class="contact_main">
+            <div id="contact_title">
+                <div id="title">
+                    <h1>聯 繫 我 們</h1>
+                    <h1>Contact us</h1>
+                </div>
+                <div class="banner"></div>
+            </div>
+            <!--如 何 抵 達-->
+            <div class="contact">
+                <div class="container">
+                    <div class="panel-group">
+                        <input type="radio" name="panel-radio" id="radio1" class="panel-control" checked>
+                        <input type="radio" name="panel-radio" id="radio2" class="panel-control">
+                        <div class="tab-group">
+                            <label for="radio1" class="active">交通</label>
+                            <label for="radio2">聯繫</label>
+                        </div>
+                        <div class="content-group">
+                            <div>
+                                <div class="content content1">
+                                    <h2>如 何 抵 達</h2>
+                                    <h3>How arrival</h3>
+                                    <h5>飯店位置簡述：</h5>
+                                    <p>Tasters Palace 位於台灣宜蘭縣郊區，面朝林蔭大道，鄰近宜蘭知名景點龍潭湖，山明水秀，是出外出遊後嫻靜享受美食的地點</p>
+                                    <p>地址:宜蘭縣礁溪鄉漳福路25號</p>
+                                    <div class="row">
+                                        <div>
+                                            <h6>一 客運抵達方式 一</h6>
+                                            <p>&#10148 台北車站(台北轉運站) / 板橋客運轉運站 / 信義市政府站：搭乘【葛瑪蘭客運】或【首都客運】到達礁溪客運轉運站或宜蘭客運轉運站，再轉乘往龍潭湖的公車，在龍潭湖站下車，費用為120~170元</p>
+                                            <p>&#10148 桃園國際機場：搭乘往礁溪或宜蘭的【統聯客運】到達礁溪客運轉運站或宜蘭客運轉運站再轉乘往龍潭湖的公車，在龍潭湖站下車，費用為220~270元</p>
+                                        </div>
+                                        <div>
+                                            <h6>一 火車抵達方式 一</h6>
+                                            <p>&#10148 搭乘任一班【自強】或【普通車】都能到達礁溪火車站或宜蘭火車站，再轉乘往龍潭湖的公車，在龍潭湖站下車，費用為120~200元</p>
+                                        </div>
+                                        <div>
+                                            <h6>一 自行開車 一</h6>
+                                            <p>&#10148 從台北行經雪山隧道(國道3號)南下，出隧道口再行3公里即可到達</p>
+                                            <p>&#10148 從台北亦可選擇【海線-濱海公路】或【山線-北宜公路】，到達頭城後，再行經3公里即可抵達</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--聯 繫 我 們-->
+                            <div>
+                                <div class="content content2">
+                                    <h2>與我們聯繫</h2>
+                                    <h3>Contact us</h3>
+                                    <div class="row">
+                                        <div class="map">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.7015629892694!2d121.74113488782608!3d24.791048876883767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467fb40cbf58c4f%3A0xeeb850f2738aacba!2sHsu%E2%80%99s%20Legend%20Factory%20Tour!5e0!3m2!1szh-TW!2stw!4v1596116659119!5m2!1szh-TW!2stw"
+                                                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                                            </iframe>
+                                        </div>
+                                        <div class="word">
+                                            <p>歡迎您留下寶貴的意見，有任何問題，我們會在第一時間回覆您！</p>
+                                            <div>
+                                                <label for="username">姓名</label>
+                                                <input type="text" placeholder=" " id="username">
+                                            </div>
+                                            <div>
+                                                <label for="cellphone">電話</label>
+                                                <input type="text" placeholder=" " id="cellphone">
+                                            </div>
+                                            <div>
+                                                <label for="Email">信箱</label>
+                                                <input type="email" placeholder=" " id="Email">
+                                            </div>
+                                            <div>
+                                                <label for="textword">主題</label>
+                                                <input type="text" placeholder="" id="textword">
+                                            </div>
+                                            <div>
+                                                <label for="information" style="vertical-align: top;">信息</label>
+                                                <textarea placeholder="" id="information"></textarea>
+                                            </div>
+                                            <div>
+                                                <span>送 出</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="contact_information ">
+                    <h5>連 絡 資 訊</h5>
+                    <h6><span>&#9742</span> 0207-352-4441</h6>
+                    <h6><span>&#9993</span> Tasters_P_R@gmail.com</h6>
+                    <h6><span>&cap;</span> 宜蘭縣礁溪鄉漳福路25號</h6>
+                </div>
+                <div class="Business_hours ">
+                    <h5>營 業 時 間</h5>
+                    <h6>晚上 18 : 00 - 23 : 30</h6>
+                    <h6>星期一 - 星期日</h6>
+                    <h6>中午 11 : 30 - 14 : 30</h6>
+                </div>
+                <div class="icon ">
+                    <a href="./index.html"><img src="./images/LOGO.png "></a>
+                    <div class="icon_row ">
+                        <img src="./images/icon/facebook.svg " alt=" ">
+                        <img src="./images/icon/instagram.svg " alt=" ">
+                        <img src="./images/icon/twitter.svg " alt=" ">
+                    </div>
+                </div>
+                <div class="now_book">
+                    <div class="spinner-box">
+                        <div class="configure-border-1">
+                            <div class="configure-core"></div>
+                        </div>
+                        <div class="configure-border-2">
+                            <div class="configure-core"></div>
+                        </div>
+                    </div>
+                    <a href="./boooking.html ">
+                        <div class="now_book_word ">
+                            <p>現 在</p>
+                            <P>預 定</P>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--語言JS-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'zh-TW',
+                includedLanguages: 'en,ja,zh-TW,ko',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <!--hambuger-->
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav1").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+
+        function onClickSubMenu() {
+            document.getElementById("sub_menu").classList.toggle("change1");
+            document.querySelector(".nav1>li:nth-child(1)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(3)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(4)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(5)").classList.toggle("none");
+        }
+    </script>
+    <!--AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+</body>
+
+</html>

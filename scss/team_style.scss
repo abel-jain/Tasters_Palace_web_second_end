@@ -1,0 +1,490 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.team_main {
+    background-color: rgba(210, 180, 140, 0.1);
+    .Brand_Value {
+        .row {
+            display: flex;
+            background-repeat: no-repeat;
+            margin-top: 80px;
+            align-items: center;
+            background-image: url(../images/chef/team_1.jpg);
+            background-size: cover;
+            background-position: bottom right;
+            background-attachment: fixed;
+            overflow: hidden;
+            #video {
+                width: 60%;
+                height: 100%;
+                video {
+                    width: 100%;
+                    vertical-align: bottom;
+                }
+            }
+            .content {
+                flex: 0 1 50%;
+                padding: 15px;
+                height: auto;
+                background-color: rgba(255, 255, 255, .3);
+                h5 {
+                    line-height: 2.5rem;
+                    padding-left: 25px;
+                    font-weight: 500;
+                    text-align: justify;
+                    text-justify: distribute;
+                    word-break: break-all;
+                    color: rgba(22, 22, 22, .8);
+                }
+                h3 {
+                    border-left: 5px solid red;
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 30px;
+        overflow: hidden;
+        .team_title {
+            padding-top: 80px;
+            text-align: center;
+            background-image: url(../images/chef/team_title_img.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            h4 {
+                color: #eeeeee;
+            }
+            h2 {
+                color: #eeeeee
+            }
+            h2,
+            h4 {
+                background-color: rgba(22, 22, 22, .6);
+                filter: brightness(1);
+            }
+        }
+        .team_word {
+            margin-top: 50px;
+            text-align: center;
+            h5 {
+                font-weight: 500;
+                color: rgba(22, 22, 22, .8);
+            }
+        }
+    }
+    .container:nth-child(3) {
+        padding-top: 200px;
+    }
+    .Chef_introduction {
+        p {
+            word-wrap: break-word;
+            line-height: 1.8rem;
+        }
+        .Chef_introduction_container {
+            margin-top: 50px;
+            position: relative;
+            overflow-x: hidden;
+            .row {
+                display: flex;
+                .slide {
+                    position: relative;
+                    flex: 1;
+                    overflow: hidden;
+                    transition: 0.5s ease-in-out;
+                    bottom: 0px;
+                    height: 85vh;
+                    .content {
+                        position: relative;
+                        top: 0;
+                        padding: 50px 25px;
+                        color: #fff;
+                        opacity: 0;
+                        transition: 0s;
+                        transform: translateY(0px);
+                        word-wrap: break-word;
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        text-align: justify;
+                        text-justify: distribute;
+                        word-break: break-all;
+                        .chef_headerimg {
+                            position: relative;
+                            flex: 0 1 30%;
+                            img {
+                                width: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .chef_word {
+                            flex: 1 1 50%;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 30px 10px;
+                            background-color: rgba(255, 255, 255, .7);
+                            box-shadow: 3px 3px 15px 5px #2b1010c4;
+                            margin-left: 25px;
+                            max-height: 500px;
+                            overflow: auto;
+                            h4 {
+                                color: rgba(22, 22, 22, .8);
+                            }
+                            p:nth-child(2) {
+                                display: block;
+                                color: rgba(22, 22, 22, .8);
+                                padding: 0px 5px;
+                                text-align: justify;
+                                text-justify: distribute;
+                                word-break: break-all;
+                            }
+                            p:nth-child(3) {
+                                display: block;
+                                color: rgba(22, 22, 22, .8);
+                                padding: 0 20px;
+                                font-weight: 500;
+                                line-height: 2rem;
+                            }
+                            p:nth-child(4) {
+                                display: block;
+                                color: rgba(22, 22, 22, .8);
+                                padding: 0px 5px;
+                                margin-top: 30px;
+                            }
+                            p:nth-child(6) {
+                                display: block;
+                                color: rgba(22, 22, 22, .8);
+                                padding: 0px 5px;
+                                margin-top: 20px;
+                            }
+                            ul {
+                                padding-left: 25px;
+                                li {
+                                    list-style: inside;
+                                    color: rgba(22, 22, 22, .8);
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    line-height: 1.8rem;
+                                }
+                            }
+                            .chef_icon {
+                                display: flex;
+                                width: 100%;
+                                position: relative;
+                                li {
+                                    position: relative;
+                                    list-style: none;
+                                    width: 50px;
+                                    height: 50px;
+                                    img {
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        top: 0;
+                                        left: 0;
+                                        padding: 0px 11px;
+                                    }
+                                }
+                                li:hover {
+                                    transform: translateY(-5px);
+                                    cursor: pointer;
+                                }
+                                >img {
+                                    position: absolute;
+                                    width: 50%;
+                                    bottom: 0;
+                                    right: 0;
+                                    z-index: 1;
+                                    z-index: -1;
+                                }
+                            }
+                        }
+                    }
+                }
+                .slide:last-child {
+                    border-right: none;
+                }
+                .slide:nth-child(1) {
+                    background-image: url(../images/chef/chef_01.jpeg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    filter: brightness(.6);
+                    .content {
+                        background: linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url(../images/chef/chef_background01.jpg) center center no-repeat;
+                    }
+                }
+                .slide:nth-child(2) {
+                    background-image: url(../images/chef/chef_02.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    filter: brightness(.6);
+                    .content {
+                        background: linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url(../images/chef/chef_background02.jpg) center center no-repeat;
+                    }
+                }
+                .slide:nth-child(3) {
+                    background-image: url(../images/chef/chef_03.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    filter: brightness(.6);
+                    .content {
+                        background: linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url(../images/chef/chef_background03.jpg) center center no-repeat;
+                    }
+                }
+                .slide:nth-child(4) {
+                    background-image: url(../images/chef/chef_04.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    filter: brightness(.6);
+                    .content {
+                        background: linear-gradient(top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2)), url(../images/chef/chef_background04.jpg) center center no-repeat;
+                    }
+                }
+                .slide:hover {
+                    flex-grow: 10;
+                    background-position: top;
+                    background-size: initial;
+                    filter: brightness(1);
+                    .content {
+                        opacity: 1;
+                        transition: 0.5s;
+                        transition-delay: 0.5s;
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+     :lang(ja) {
+        .home {
+            .header {
+                .container {
+                    .row {
+                        .nav {
+                            .nav_animation {
+                                font-size: 15px;
+                                ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    html {
+        font-size: 14px;
+    }
+    .goog-te-gadget-simple {
+        >span {
+            top: -12px!important;
+            left: -2px;
+        }
+    }
+    .team_main {
+        .container {}
+        .Brand_Value {
+            .row {
+                flex-direction: column;
+                #video {
+                    width: 100%;
+                }
+                .content {
+                    h5 {
+                        line-height: 3.5rem;
+                    }
+                }
+            }
+        }
+        .Chef_introduction {
+            .Chef_introduction_container {
+                .row {
+                    flex-wrap: wrap;
+                    flex: 100%;
+                    .slide {
+                        flex: 1 1 50%;
+                        .content {
+                            flex-direction: column;
+                            padding: 15px;
+                            .chef_headerimg {
+                                display: none;
+                            }
+                            .chef_word {
+                                max-height: 100%;
+                                margin: 0;
+                                padding: 15px;
+                            }
+                        }
+                    }
+                    .slide.-on {
+                        flex-grow: 10;
+                        background-position: top;
+                        background-size: initial;
+                        filter: grayscale(0);
+                        .content {
+                            opacity: 1;
+                            transition: 0.5s;
+                            transition-delay: 0.5s;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    #google_translate_element {
+        margin-right: 15px;
+    }
+    .goog-te-gadget-simple {
+        >span {
+            top: -13px!important;
+            left: -2px;
+        }
+    }
+    html {
+        font-size: 14px;
+    }
+    .team_main {
+        .container {}
+        .Brand_Value {
+            .row {
+                flex-direction: column;
+                #video {
+                    width: 100%;
+                }
+                .content {
+                    h5 {
+                        line-height: 3.5rem;
+                    }
+                }
+            }
+        }
+        .Chef_introduction {
+            .Chef_introduction_container {
+                .row {
+                    flex-wrap: wrap;
+                    flex: 100%;
+                    .slide {
+                        flex: 1 1 100%;
+                        background-position: top!important;
+                        height: auto;
+                        .content {
+                            flex-direction: column;
+                            padding: 20 15px;
+                            background-size: cover!important;
+                            opacity: 1;
+                            .chef_headerimg {
+                                // display: none;
+                            }
+                            .chef_word {
+                                max-height: 100%;
+                                margin: 15px 0px 0px 0px;
+                                padding: 15px;
+                            }
+                        }
+                    }
+                    .slide:nth-child(1),
+                    .slide:nth-child(2),
+                    .slide:nth-child(3),
+                    .slide:nth-child(4) {
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #google_translate_element {
+        margin-right: 15px;
+    }
+    .goog-te-gadget-simple {
+        >span {
+            top: -13px!important;
+            left: -2px;
+        }
+    }
+    html {
+        font-size: 14px;
+    }
+    .team_main {
+        .container {
+            padding: 0;
+            .team_word {
+                margin-top: 25px;
+                padding: 0 15px;
+                h5 {
+                    line-height: 2.5rem;
+                }
+            }
+        }
+        .container:nth-child(3) {
+            padding-top: 80px;
+        }
+        .Brand_Value {
+            .row {
+                // margin-top: 50px;
+                flex-direction: column;
+                #video {
+                    width: 100%;
+                }
+                .content {
+                    h5 {
+                        line-height: 2.5rem;
+                    }
+                }
+            }
+        }
+        .Chef_introduction {
+            .Chef_introduction_container {
+                .row {
+                    flex-wrap: wrap;
+                    flex: 100%;
+                    .slide {
+                        flex: 1 1 100%;
+                        background-position: top!important;
+                        height: auto;
+                        .content {
+                            flex-direction: column;
+                            padding: 20 15px;
+                            background-size: cover!important;
+                            opacity: 1;
+                            .chef_headerimg {
+                                // display: none;
+                            }
+                            .chef_word {
+                                max-height: 100%;
+                                margin: 15px 0px 0px 0px;
+                                padding: 15px;
+                            }
+                        }
+                    }
+                    .slide:nth-child(1),
+                    .slide:nth-child(2),
+                    .slide:nth-child(3),
+                    .slide:nth-child(4) {
+                        filter: grayscale(0);
+                    }
+                }
+            }
+        }
+    }
+}

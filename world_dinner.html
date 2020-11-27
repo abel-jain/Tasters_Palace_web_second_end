@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" format-detection" content=" telephone=no">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/world_dinner.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/hamburger.css">
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/AOS.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="./js/header_fixed.js"></script>
+    <script src="./js/Language.js"></script>
+    <script src="./js/loading.js"></script>
+    <title>世界餐桌 / World Dinner</title>
+</head>
+
+<body onload="myFunction()">
+    <!--LOADING-->
+    <div id="loading">
+        <h1>Cooking in Loading..</h1>
+        <div id="cooking">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div id="area">
+                <div id="sides">
+                    <div id="pan"></div>
+                    <div id="handle"></div>
+                </div>
+                <div id="pancake">
+                    <div id="pastry"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/LOGO.png">
+                    </a>
+                </div>
+                <ul class="nav">
+                    <a href="./team.html">
+                        <li class="nav_animation">團隊</li>
+                    </a>
+                    <li class="nav_animation">菜單
+                        <ul>
+                            <a href="./Appetizer.html">
+                                <li>前菜</li>
+                            </a>
+                            <a href="./Main_Course.html">
+                                <li>主菜</li>
+                            </a>
+                            <a href="./dessert.html">
+                                <li>甜點</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <a href="./world_dinner.html">
+                        <li class="nav_animation" style="color: firebrick;">&#10020 世界餐桌</li>
+                    </a>
+                    <a href="./contact.html">
+                        <li class="nav_animation">聯繫我們</li>
+                    </a>
+                    <a href="./boooking.html">
+                        <li class="nav_animation">預定</li>
+                    </a>
+                    <div id="google_translate_element"></div>
+                    <div id="menu-bar">
+                        <div id="menu" onclick="onClickMenu()">
+                            <div id="bar1" class="bar"></div>
+                            <div id="bar2" class="bar"></div>
+                            <div id="bar3" class="bar"></div>
+                        </div>
+                        <ul class="nav1" id="nav1">
+                            <li>
+                                <a href="./team.html">團隊</a></li>
+                            <li class="aaa" id="#aaa" onclick="onClickSubMenu()">
+                                菜單 &#9660
+                                <ul id="sub_menu">
+                                    <li><a href="./Appetizer.html">前菜</a></li>
+                                    <li><a href="./Main_Course.html">主菜</a></li>
+                                    <li><a href="./dessert.html">甜點</a></li>
+                                </ul>
+                            </li>
+                            <li style="text-indent: -1.5rem;">
+                                <a href="./world_dinner.html" style="color: firebrick;">&#10020 世界餐桌</a></li>
+                            <li>
+                                <a href="./contact.html">聯繫我們</a></li>
+                            <li>
+                                <a href="./boooking.html">預定</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-bg" id="menu-bg"></div>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Main-->
+    <section>
+        <div class="world_dinner">
+            <div id="world_dinner_title">
+                <div id="title">
+                    <h1>世 界 餐 桌</h1>
+                    <h1>World Dinner</h1>
+                </div>
+                <div class="banner"></div>
+            </div>
+        </div>
+        <!--最 新 文 章-->
+        <div class="world_dinner_main">
+            <div class="container">
+                <h2>美食最新文章</h2>
+                <hr style="color: #ccc;">
+                <div class="wrapper1">
+                    <div class="row">
+                        <div class="left">
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5101189?template=fashion">
+                                    <img src="./images/dinner/img1.jpg" alt="">
+                                    <h3>當花蓮西瓜、泰國紅蔥頭，遇上海邊鮭魚卵，台灣星廚攜手泰國廚神演繹奇妙滋味</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5101128?template=fashion">
+                                    <img src="./images/dinner/img1_1.jpg" alt="">
+                                    <h6>老是客滿的咖啡館、沒預購買不到的麵線，3家潮州人氣店創生故事</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5100942?template=fashion">
+                                    <img src="./images/dinner/img1_2.jpg" alt="">
+                                    <h6>不只是提神，咖啡這樣喝可以提升運動表現與燃脂</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5100903?template=fashion">
+                                    <img src="./images/dinner/img1_3.jpg" alt="">
+                                    <h6>韓式炸雞大戰印度咖哩？韓國夫妻如何在新德里插旗</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5100236?template=fashion">
+                                    <img src="./images/dinner/img1_4.jpg" alt="">
+                                    <h6>便當裡的家常愛情，「蝦仁是願你健康，甜椒是我愛你」</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5099531?template=fashion">
+                                    <img src="./images/dinner/img2.jpeg" alt="">
+                                    <h3>發明「人造肉」真的能促進環保？江振誠：食物零浪費才是根本</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5099893?template=fashion">
+                                    <img src="./images/dinner/img2_1.jpg" alt="">
+                                    <h6>做菜老是失敗？跟著經濟學家做做看，這款滷汁超簡單</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5099676?template=fashion">
+                                    <img src="./images/dinner/img2_2.jpeg" alt="">
+                                    <h6>江振誠與愛徒，如何打造全台超難訂的兩間人氣餐廳？</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5099633?template=fashion">
+                                    <img src="./images/dinner/img2_3.jpg" alt="">
+                                    <h6>深山裡的主廚，南台灣最難訂的餐廳Akame如何用料理活絡部落？</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5100267?template=fashion">
+                                    <img src="./images/dinner/img2_4.jpeg" alt="">
+                                    <h6>吃魚也該上課！跟著這樣做才是尊重食材</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5100481?template=fashion">
+                                    <img src="./images/dinner/img3.jpeg" alt="">
+                                    <h3>荒廢公園變打卡聖地！新竹偷閒新景點，一次享受老屋、湖光、客家菜</h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5100330?template=fashion">
+                                    <img src="./images/dinner/img3_1.jpg" alt="">
+                                    <h6>炎炎夏日將至，來點清爽蔬食！徐仲的夏季防疫消暑菜單大公開</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5100915?template=fashion">
+                                    <img src="./images/dinner/img3_2.jpg" alt="">
+                                    <h6>一客4800的餐，8分鐘全訂光！不受疫情影響，這些餐廳做了什麼</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5099555?template=fashion">
+                                    <img src="./images/dinner/img3_3.jpeg" alt="">
+                                    <h6>戶外野餐吃什麼好？懶得做，就請飯店大廚幫你上菜</h6>
+                                </a>
+                            </div>
+                            <div class="cardbox">
+                                <a href="https://www.cw.com.tw/article/5099909?template=fashion">
+                                    <img src="./images/dinner/img3_4.jpg" alt="">
+                                    <h6>為什麼400次咖啡要用即溶咖啡？</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more1">
+                        <span id="more1">查看更多</span>
+                    </div>
+                    <div id="page2">
+                        <div class="row">
+                            <div class="left">
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5097828?template=fashion">
+                                        <img src="./images/dinner/img4.jpeg" alt="">
+                                        <h3>從法國米其林到台東偏鄉，Sinasera 24：用料理讓世界看見長濱</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5098516?template=fashion">
+                                        <img src="./images/dinner/img4_1.jpeg" alt="">
+                                        <h6>【獨家披露】誰說吃到飽不紅了？2020十大餐飲趨勢，過年聚餐必讀</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5098247?template=fashion">
+                                        <img src="./images/dinner/img4_2.jpeg" alt="">
+                                        <h6>在台灣，早餐該吃生蛋拌飯、半熟蛋嗎？</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5098268?template=fashion">
+                                        <img src="./images/dinner/img4_3.jpeg" alt="">
+                                        <h6>搞定張國煒的胃，米其林名廚如何把混血美食搬上天空？</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5098599?template=fashion">
+                                        <img src="./images/dinner/img4_4.jpeg" alt="">
+                                        <h6>江振誠：怎麼讓客人一來再來？從熬高湯看養客祕訣</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5097760?template=fashion">
+                                        <img src="./images/dinner/img5.jpeg" alt="">
+                                        <h3>令和天皇登基晚宴菜單大公開！為何30年來堅持法國酒？</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5097682?template=fashion">
+                                        <img src="./images/dinner/img5_1.jpeg" alt="">
+                                        <h6>明年米其林拓向台中！專家搶先預測，這6家有望摘星</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5098355?template=fashion">
+                                        <img src="./images/dinner/img5_2.jpg" alt="">
+                                        <h6>《Grand Maison 東京》就是這家！跟著木村拓哉吃米其林</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5097956?template=fashion">
+                                        <img src="./images/dinner/img5_3.jpeg" alt="">
+                                        <h6>吃素救地球是真的！一年少排30%溫室氣體</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5096687?template=fashion">
+                                        <img src="./images/dinner/img5_4.jpeg" alt="">
+                                        <h6>十年磨一劍，中秋遞祝福，微熱山丘首款中秋禮盒「鳳梨奶黃月餅」</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="more2">
+                            <span id='more2'>查看更多</span>
+                        </div>
+                    </div>
+                    <div id="page3">
+                        <div class="row">
+                            <div class="left">
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5096388?template=fashion">
+                                        <img src="./images/dinner/img6.jpeg" alt="">
+                                        <h3>素食漢堡對地球友善，但對你來說有更健康嗎？</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5096354?template=fashion">
+                                        <img src="./images/dinner/img6_1.jpeg" alt="">
+                                        <h6>跨越調和藝術之境－空間設計師朱志康與「皇家禮炮」用聞香譜寫的新靈魂</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5096300?template=fashion">
+                                        <img src="./images/dinner/img6_2.jpeg" alt="">
+                                        <h6>星巴克、長榮航空搶著聯名合作　這家啤酒廠有什麼魅力？</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5096276?template=fashion">
+                                        <img src="./images/dinner/img6_3.jpeg" alt="">
+                                        <h6>【屏東青創】竹科夫妻檔 傳承日曬製麵老店重新飄香</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5096067?template=fashion">
+                                        <img src="./images/dinner/img6_4.jpeg" alt="">
+                                        <h6>為雪莉桶而生的堅持！麥卡倫正統之道：為何麥卡倫雪莉桶如此珍貴？</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5095895?template=fashion">
+                                        <img src="./images/dinner/img7.jpeg" alt="">
+                                        <h3>「港特首吃不到」的新加坡肉骨茶，台灣吃得到了！創辦人親自剪綵</h6>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5095745?template=fashion">
+                                        <img src="./images/dinner/img7_1.jpeg" alt="">
+                                        <h6>一杯賣2000元的咖啡，到底在貴什麼？</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5095702?template=fashion">
+                                        <img src="./images/dinner/img7_2.jpeg" alt="">
+                                        <h6>「咖啡界Apple」藍瓶，為何落腳首爾沒落手工製鞋區？ </h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5095601?template=fashion">
+                                        <img src="./images/dinner/img7_3.jpeg" alt="">
+                                        <h6>「台灣員工所有事都很怕……」跟帥主廚學管理，餐廳開8個月就摘星</h6>
+                                    </a>
+                                </div>
+                                <div class="cardbox">
+                                    <a href="https://www.cw.com.tw/article/5095553?template=fashion">
+                                        <img src="./images/dinner/img7_4.jpeg" alt="">
+                                        <h6>台灣自產的正宗德式啤酒，柏克金靠兩大武器突圍</h6>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--熱 門 文 章-->
+                <h2>美食熱門文章</h2>
+                <hr style="color: #ccc;">
+                <div class="wrapper2">
+                    <div class="row">
+                        <div class="cardbox">
+                            <a href="https://www.cw.com.tw/article/5086167?template=fashion">
+                                <img src="./images/dinner/new_01.jpeg" alt="">
+                                <h6>歸還米其林二星，落腳成都，江振誠新定位：料理人，中國人創作人</h6>
+                            </a>
+                        </div>
+                        <div class="cardbox">
+                            <a href="https://www.cw.com.tw/article/5089175?template=fashion">
+                                <img src="./images/dinner/new_02.jpeg" alt="">
+                                <h6>廚房裡的外交官夫人，莊祖宜的食與藝</h6>
+                            </a>
+                        </div>
+                        <div class="cardbox">
+                            <a href="https://www.cw.com.tw/article/5094697?template=fashion">
+                                <img src="./images/dinner/new_03.jpeg" alt="">
+                                <h6>完美名單／台北米其林公布，這24家餐廳厲害在哪裡？</h6>
+                            </a>
+                        </div>
+                        <div class="cardbox">
+                            <a href="https://www.cw.com.tw/article/5098186?template=fashion">
+                                <img src="./images/dinner/new_04.jpeg" alt="">
+                                <h6>傳統肉5倍價、一個月竟熱賣上千萬！為什麼台灣人愛吃科技植物肉？</h6>
+                            </a>
+                        </div>
+                        <div class="cardbox">
+                            <a href="https://www.cw.com.tw/article/5098355?template=fashion">
+                                <img src="./images/dinner/img5_2.jpg" alt="">
+                                <h6>《Grand Maison 東京》就是這家！跟著木村拓哉吃米其林</h6>
+                            </a>
+                        </div>
+                        <div class="cardbox">
+                            <a href="https://www.cw.com.tw/article/5097682?template=fashion">
+                                <img src="./images/dinner/img5_1.jpeg" alt="">
+                                <h6>明年米其林拓向台中！專家搶先預測，這6家有望摘星</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--footer-->
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="contact_information ">
+                    <h5>連 絡 資 訊</h5>
+                    <h6><span>&#9742</span> 0207-352-4441</h6>
+                    <h6><span>&#9993</span> Tasters_P_R@gmail.com</h6>
+                    <h6><span>&cap;</span> 宜蘭縣礁溪鄉漳福路25號</h6>
+                </div>
+                <div class="Business_hours ">
+                    <h5>營 業 時 間</h5>
+                    <h6>晚上 18 : 00 - 23 : 30</h6>
+                    <h6>星期一 - 星期日</h6>
+                    <h6>中午 11 : 30 - 14 : 30</h6>
+                </div>
+                <div class="icon ">
+                    <a href="./index.html"><img src="./images/LOGO.png "></a>
+                    <div class="icon_row ">
+                        <img src="./images/icon/facebook.svg " alt=" ">
+                        <img src="./images/icon/instagram.svg " alt=" ">
+                        <img src="./images/icon/twitter.svg " alt=" ">
+                    </div>
+                </div>
+                <div class="now_book">
+                    <div class="spinner-box">
+                        <div class="configure-border-1">
+                            <div class="configure-core"></div>
+                        </div>
+                        <div class="configure-border-2">
+                            <div class="configure-core"></div>
+                        </div>
+                    </div>
+                    <a href="./boooking.html ">
+                        <div class="now_book_word ">
+                            <p>現 在</p>
+                            <P>預 定</P>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--語言JS-->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'zh-TW',
+                includedLanguages: 'en,ja,zh-TW,ko',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <!--hambuger-->
+    <script>
+        function onClickMenu() {
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav1").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+
+        function onClickSubMenu() {
+            document.getElementById("sub_menu").classList.toggle("change1");
+            document.querySelector(".nav1>li:nth-child(1)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(3)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(4)").classList.toggle("none");
+            document.querySelector(".nav1>li:nth-child(5)").classList.toggle("none");
+        }
+    </script>
+    <!--點擊更多-->
+    <script>
+        $("#more1").on("click", function() {
+            $("#more1").css('display', 'none');
+            $("#page2").css('display', 'block');
+        });
+        $("#more2").on("click", function() {
+            $("#more2").css('display', 'none');
+            $("#page3").css('display', 'block');
+        });
+    </script>
+</body>
+
+</html>

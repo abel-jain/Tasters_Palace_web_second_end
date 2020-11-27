@@ -1,0 +1,298 @@
+            .footer {
+                background-color: rgba(210, 180, 140, 0.2);
+                h5,
+                h6,
+                span {
+                    line-height: 2.5rem;
+                }
+                padding: 25px;
+                border-top:1px solid rgba(210, 180, 140, 0.1);
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 30px;
+                    .row {
+                        display: flex;
+                        justify-content: center;
+                        .contact_information {
+                            flex: 1 1 30%;
+                            padding: 0 15px;
+                            h5 {
+                                padding-left: 10px;
+                                display: inline-block;
+                            }
+                            h6 {
+                                padding-left: 20px;
+                                span {
+                                    font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        .Business_hours {
+                            flex: 1 1 30%;
+                            padding: 0 15px;
+                            h5 {
+                                padding-left: 10px;
+                                display: inline-block;
+                            }
+                            h6 {
+                                padding-left: 20px;
+                            }
+                        }
+                        .icon {
+                            flex: 0 1 20%;
+                            text-align: center;
+                            align-self: center;
+                            .icon_row {
+                                padding: 10px 0px;
+                                text-align: center;
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                    padding: 0 5px;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                }
+                                img:hover {
+                                    transform: translateY(-10px);
+                                }
+                            }
+                        }
+                        .now_book {
+                            flex: 1 1 20%;
+                            position: relative;
+                            text-align: center;
+                            /* X-ROTATING BOXES */
+                            .spinner-box {
+                                display: inline-block;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                .configure-border-1 {
+                                    width: 115px;
+                                    height: 115px;
+                                    padding: 3px;
+                                    position: absolute;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background: #ebe7e7;
+                                    animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
+                                    .configure-core {
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: #ffb5a3;
+                                    }
+                                }
+                                .configure-border-2 {
+                                    width: 115px;
+                                    height: 115px;
+                                    padding: 3px;
+                                    left: -115px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    background-color: #ffb5a3;
+                                    transform: rotate(45deg);
+                                    animation: configure-xclockwise 3s ease-in-out 0s infinite alternate;
+                                    .configure-core {
+                                        width: 100%;
+                                        height: 100%;
+                                        background: #ebe7e7;
+                                    }
+                                }
+                            }
+                            a {
+                                display: inline-block;
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                .now_book_word {
+                                    p {
+                                        color: rgba(34, 34, 34, 5);
+                                        font-size: 2rem;
+                                        font-weight: 600;
+                                        line-height: 2.5rem!important;
+                                        animation: configure-grow 1s ease-in-out 0s infinite alternate;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (min-width: 992px) and (max-width: 1199px) {
+                html {
+                     :lang(ja),
+                     :lang(en),
+                     :lang(ko) {
+                        .footer {
+                            .container {
+                                .row {
+                                    .Business_hours {
+                                        flex: 1 1 28%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer {
+                    padding: 15px;
+                    .container {
+                        padding: 0;
+                        .row {
+                            .contact_information {
+                                flex: 1 1 30%;
+                            }
+                            .Business_hours {
+                                flex: 1 1 25%;
+                            }
+                            .now_book {
+                                // flex: 0 1 15%;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (min-width: 769px) and (max-width: 991px) {
+                html {
+                     :lang(ja),
+                     :lang(en),
+                     :lang(ko) {
+                        .footer {
+                            .container {
+                                padding: 10px 5px;
+                                .row {
+                                    .contact_information {
+                                        h6 {
+                                            padding-left: 5px;
+                                        }
+                                    }
+                                    .Business_hours {
+                                        flex: 1 1 35%;
+                                        h6 {
+                                            padding-left: 5px;
+                                        }
+                                    }
+                                    .now_book {
+                                        flex: 1 1 22%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer {
+                    padding: 0px;
+                    .container {
+                        padding: 10px 15px;
+                        .row {
+                            .contact_information {
+                                padding: 0 10px;
+                                flex: 1 1 37%;
+                            }
+                            .Business_hours {
+                                padding: 0 10px;
+                                flex: 1 1 31%;
+                            }
+                            .now_book {
+                                .spinner-box {
+                                    .configure-border-1 {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                    .configure-border-2 {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (max-width: 768px) {
+                .footer {
+                    padding: 0px;
+                    .container {
+                        padding: 10px;
+                        .row {
+                            flex-wrap: wrap;
+                            .contact_information {
+                                text-align: center;
+                                order: 1;
+                                flex: 1 1 100%;
+                                padding: 0px 5px;
+                                h5,
+                                h6 {
+                                    padding: 0;
+                                }
+                                h5 {}
+                                h6 {}
+                            }
+                            .Business_hours {
+                                text-align: center;
+                                order: 2;
+                                padding: 0 5px;
+                                flex: 1 1 100%;
+                                h5,
+                                h6 {
+                                    padding: 0;
+                                }
+                                h6 {}
+                                h5 {}
+                            }
+                            .icon {
+                                order: 3;
+                                flex: 1 1 50%;
+                            }
+                            .now_book {
+                                order: 4;
+                                flex: 1 1 50%;
+                                .spinner-box {
+                                    .configure-border-1 {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                    .configure-border-2 {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media only screen and (max-width: 375px) {
+                .footer {
+                    padding: 0px;
+                    .container {
+                        padding: 10px;
+                        .row {
+                            .now_book {
+                                order: 4;
+                                flex: 1 1 50%;
+                                padding-bottom: 50%;
+                                .spinner-box {
+                                    .configure-border-1 {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                    .configure-border-2 {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }

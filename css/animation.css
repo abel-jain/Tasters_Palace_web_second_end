@@ -1,0 +1,95 @@
+/* Underline From Center */
+
+
+/*nav animation*/
+
+.nav_animation {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+.nav_animation:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 90%;
+    right: 90%;
+    bottom: 0;
+    background: #ffc72e;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.nav_animation:hover:before,
+.nav_animation:focus:before,
+.nav_animation:active:before {
+    left: 0;
+    right: 0;
+}
+
+@keyframes fixHeader {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-0%);
+    }
+}
+
+@keyframes configure-clockwise {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes configure-xclockwise {
+    0% {
+        transform: rotate(45deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(-135deg);
+    }
+    75% {
+        transform: rotate(-225deg);
+    }
+    100% {
+        transform: rotate(-315deg);
+    }
+}
+
+@keyframes configure-grow {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+        color: crimson;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
